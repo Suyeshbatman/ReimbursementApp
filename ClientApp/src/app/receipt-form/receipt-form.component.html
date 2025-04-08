@@ -1,0 +1,26 @@
+<form [formGroup]="form" (ngSubmit)="submit()" enctype="multipart/form-data">
+    <label>
+      Date:
+      <input type="date" formControlName="date" />
+    </label><br>
+  
+    <label>
+      Amount:
+      <input type="number" formControlName="amount" />
+    </label><br>
+  
+    <label>
+      Description:
+      <textarea formControlName="description"></textarea>
+    </label><br>
+  
+    <label>
+      Receipt File:
+      <input type="file" (change)="onFileChange($event)" />
+    </label><br>
+  
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+  </form>
+  
+  <p>{{ message }}</p>
+  
