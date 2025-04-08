@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-receipt-form',
+  standalone: true,
+  imports: [ReactiveFormsModule],
   templateUrl: './receipt-form.component.html',
   styleUrls: ['./receipt-form.component.scss']
 })
@@ -41,7 +44,7 @@ export class ReceiptFormComponent {
     formData.append('receiptFile', this.file);
 
     // Make the HTTP POST request to the backend API
-    this.http.post('https://localhost:5001/api/receipts/submit', formData)
+    this.http.post('http://localhost:5100/api/receipts/submit', formData)
       .subscribe({
         next: () => this.message = 'Receipt submitted successfully!',
         error: () => this.message = 'Error submitting receipt.'

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReimbursementAPI", "ReimbursementAPI.csproj", "{406DB5E5-BE2E-2122-0499-4351BA111204}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{406DB5E5-BE2E-2122-0499-4351BA111204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406DB5E5-BE2E-2122-0499-4351BA111204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406DB5E5-BE2E-2122-0499-4351BA111204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406DB5E5-BE2E-2122-0499-4351BA111204}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49ED26B8-A6E8-4F5F-A916-D3D76756832D}
+	EndGlobalSection
+EndGlobal
